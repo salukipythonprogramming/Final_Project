@@ -39,10 +39,13 @@ The **unique id** for the record is **id** the datatype is **integer**, we also 
 
 This area is for communication between Tyson and Blake.  We will keep a team member, a date, a time, and a comment for each log entry.
 
-Team Member: Blake
-Date: 11/27/23
-Time:  11:42 am
-Comment: Created the readme.md file
+**Team Member:** Blake <br />
+**Date:** 11/27/23 <br />
+**Time:**  11:42 am <br />
+**Comment:** Created the readme.md file <br />
+<br />
+
+
 
 ## Table file format
 
