@@ -24,7 +24,7 @@ The database backend for this project will be SQLite.  When the admin user creat
 
 ## Fields for the records
 
-The **unique id** for the record is **id** the datatype is **integer**, we also include the following records and corresponding datatypes:
+The **unique id** for the record is **id** the datatype is **integer**, we also include the following records and corresponding **datatypes**:
 
 1. ID = integer (primary key) (unique id)
 2. Serial = string
@@ -37,7 +37,7 @@ The **unique id** for the record is **id** the datatype is **integer**, we also 
 
 # Communication
 
-This area is for communication between Tyson and Blake.  We will keep a team member, a date, a time, and a comment for each log entry.  To uptain formatting standards, we will also show our newest log entries at the top, and oldest entries at the bottom.
+This area is for communication between Tyson and Blake.  We will keep a **team member**, a **date**, a **time**, and a **comment** for each log entry.  To uptain formatting standards, we will also show our **newest** log entries at the **top**, and **oldest** entries at the **bottom**.
 
 **Team Member:** Blake <br />
 **Date:** 11/27/23 <br />
