@@ -8,7 +8,7 @@ Tyson and Blake
 
 ## Device Management System
 
-The Device Management System is written in python programming language.  It primarily contains two layers, cli and gui.  The cli is for the admin to create, read, update, and delete device records.  The gui is for the user to read device records.
+The Device Management System is written in python programming language.  The python program primarily contains two layers, cli and gui.  The cli is for the admin to create, read, update, and delete device records.  The gui is for the user to read device records.
 
 ## CLI (command line interface)
 
