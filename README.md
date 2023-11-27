@@ -18,7 +18,7 @@ Upon running the python program through the command line interface, the admin us
 
 Upon running the python program to launch the tkinter gui, the user will have options to view device records in a read only mode.
 
-## Database backend
+## Database backend (SQLite)
 
 The database backend for this project will be SQLite.  When the admin user creates a record, the record will be stored, processed, and edited using the SQLite database. 
 
