@@ -1,7 +1,9 @@
 Import sqlite3
+
 #connection to Database
 conn = sqlite3.connect('device_records.db')
 cursor = conn.cursor()
+
 # Create the device table if not exists
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS devices (
