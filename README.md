@@ -45,6 +45,11 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 **Comment:** Created the readme.md file <br />
 <br />
 
+**Team Member:** Tyson <br />
+**Date:** 11/28/23 <br />
+**Time:**  11:13 pm <br />
+**Comment:** Created the CLI python Code version 1.0. txt file <br />
+<br />
 
 
 ## Table file format
