@@ -68,22 +68,6 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 |2               |223344556677                   |C4:E1:34:D7:CE:D4            |55555                        |DELL                         |N3048P                       |TRUE                         |
 |3               |334455667788                   |C7:E1:34:D7:CE:D7            |77777                        |EXTREME                      |X440-G2                      |TRUE                         |
 
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-## UML Diagram
-
-+-------------------+           +---------------------+
-|   SQLite Database |           |      DeviceRecord   |
-|-------------------|           |---------------------|
-|                   |           |  + ID: int          |
-|                   |           |  + Serial: str      |
-|                   |           |  + Mac: str         |
-|                   |           |  + Tag_Num: int     |
-|                   |           |  + Make: str        |
-|                   |           |  + Model: str       |
-|                   |           |  + Factory_Reset: str|
 |                   |           +---------------------+
 |                   |
 +-------------------+
