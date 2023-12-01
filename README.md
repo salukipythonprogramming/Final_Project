@@ -74,38 +74,17 @@ You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For e
 
 ## UML Diagram
 
-```mermaid
-classDiagram
-    class SQLiteDB {
-        +connect(dbName: string)
-        +executeQuery(query: string, params: any[])
-        +commit()
-        +close()
-    }
++-------------------+           +---------------------+
+|   SQLite Database |           |      DeviceRecord   |
+|-------------------|           |---------------------|
+|                   |           |  + ID: int          |
+|                   |           |  + Serial: str      |
+|                   |           |  + Mac: str         |
+|                   |           |  + Tag_Num: int     |
+|                   |           |  + Make: str        |
+|                   |           |  + Model: str       |
+|                   |           |  + Factory_Reset: str|
+|                   |           +---------------------+
+|                   |
++-------------------+
 
-    class DeviceRecord {
-        -ID: int
-        -Serial: string
-        -Mac: string
-        -Tag_Num: int
-        -Make: string
-        -Model: string
-        -Factory_Reset: string
-        +createDeviceRecord(serial: string, mac: string, tagNum: int, make: string, model: string, factoryReset: boolean)
-        +readDeviceRecord(searchChoice: int, searchValue: any): DeviceRecord
-        +updateDeviceRecord(deviceID: int, serial: string, mac: string, tagNum: int, make: string, model: string, factoryReset: boolean)
-        +deleteDeviceRecord(deleteChoice: int, deleteValue: any): boolean
-    }
-
-    SQLiteDB --> "1" DeviceRecord : Manages
-
-    class UserInterface {
-        +displayMainMenu(): int
-        +displaySearchMenu(): { choice: int, value: any }
-        +displayDeleteMenu(): { choice: int, value: any }
-        +getUserInput(prompt: string): any
-        +displayMessage(message: string)
-    }
-
-    UserInterface --> "1" DeviceRecord : Uses
-    UserInterface --> "1" SQLiteDB : Uses
