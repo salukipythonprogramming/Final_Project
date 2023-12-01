@@ -12,7 +12,7 @@ cursor.execute('''
         Mac TEXT NOT NULL,
         Tag_Num INTEGER NOT NULL,
         Make TEXT NOT NULL,
-        Model TEXT,
+        Model TEXT NOT NULL,
         Factory_Reset TEXT
     );
 ''')
