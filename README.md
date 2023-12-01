@@ -39,6 +39,7 @@ The **unique id** for the record is **id** the datatype is **integer**, we also 
 
 This area is for communication between Tyson and Blake.  We will keep a **team member**, a **date**, a **time**, and a **comment** for each log entry.  To uptain formatting standards, we will also show our **newest** log entries at the **top**, and **oldest** entries at the **bottom**.
 <br />
+<br />
 
 **Team Member:** Blake <br />
 **Date:** 12/01/23 <br />
