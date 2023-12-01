@@ -52,14 +52,13 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 <br />
 
 
-## Table file format
+## Table file format example
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
+|ID              |SERIAL                         |MAC                          |TAG_NUM                      |MAKE                         |MODEL                        |FACTORY_RESET                |
+|----------------|-------------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+|1|'112233445566'            |'C3:E1:34:D7:CE:D2'            |'54321'  |'CISCO'  |'CATALYST 1000'  |'TRUE'  | 
+|2|'223344556677'            |'C4:E1:34:D7:CE:D4'            |'55555'  |'DELL'  |'N3048P'  |'TRUE'  |
+|3|'334455667788'            |'C7:E1:34:D7:CE:D7'            |'77777'  |'EXTREME'  |'X440-G2'  |'TRUE'  |
 
 ## UML diagrams
 
