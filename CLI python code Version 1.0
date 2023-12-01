@@ -69,7 +69,7 @@ def delete_device_record():
 #Loop to list all devices 
 while True:
     print("\nMain Menu:")
-    print("1. Create a device record")
+    print("1. Create a new device record")
     print("2. Read or search a device record")
     print("3. Update a device record")
     print("4. Delete a device record")
