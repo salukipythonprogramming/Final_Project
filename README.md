@@ -42,7 +42,7 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 **Team Member:** Blake <br />
 **Date:** 12/01/23 <br />
 **Time:**  11:01 am <br />
-**Comment:** Updated the CLI python Code and renamed it to 2.0 file, also updated the README.MD file with a table example, and compatible data types for SQLite <br />
+**Comment:** Updated the CLI python Code version 1.0 txt file, also updated the README.MD file with a table example, and compatible data types for SQLite <br />
 <br />
 
 **Team Member:** Tyson <br />
