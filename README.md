@@ -72,36 +72,40 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 
 You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
 
-```mermaid
-sequenceDiagram
-participant User
-participant Program
-
-User->>Program: 1. Create a new device record
-Program->>User: Enter Serial, MAC, Tag_Num, Make, Model, Factory_Reset
-User->>Program: 2. Read or search a device record
-Program->>User: Select search criteria (ID, Serial, MAC, Tag_Num)
-User->>Program: Enter search value
-Program->>User: Display device record if found
-User->>Program: 3. Update a device record
-Program->>User: Enter ID of the device record to update
-User->>Program: Enter new Serial, MAC, Tag_Num, Make, Model, Factory_Reset
-Program->>User: Device record updated successfully
-User->>Program: 4. Delete a device record
-Program->>User: Select delete criteria (ID, Serial, MAC, Tag_Num)
-User->>Program: Enter delete value
-Program->>User: Display device record if found
-User->>Program: Confirm deletion
-Program->>User: Device record ID deleted successfully!
-User->>Program: 5. Exit
-Program->>User: Exit program
-
-And this will produce a flow chart:
+## UML Diagram
 
 ```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+classDiagram
+    class SQLiteDB {
+        +connect(dbName: string)
+        +executeQuery(query: string, params: any[])
+        +commit()
+        +close()
+    }
+
+    class DeviceRecord {
+        -ID: int
+        -Serial: string
+        -Mac: string
+        -Tag_Num: int
+        -Make: string
+        -Model: string
+        -Factory_Reset: string
+        +createDeviceRecord(serial: string, mac: string, tagNum: int, make: string, model: string, factoryReset: boolean)
+        +readDeviceRecord(searchChoice: int, searchValue: any): DeviceRecord
+        +updateDeviceRecord(deviceID: int, serial: string, mac: string, tagNum: int, make: string, model: string, factoryReset: boolean)
+        +deleteDeviceRecord(deleteChoice: int, deleteValue: any): boolean
+    }
+
+    SQLiteDB --> "1" DeviceRecord : Manages
+
+    class UserInterface {
+        +displayMainMenu(): int
+        +displaySearchMenu(): { choice: int, value: any }
+        +displayDeleteMenu(): { choice: int, value: any }
+        +getUserInput(prompt: string): any
+        +displayMessage(message: string)
+    }
+
+    UserInterface --> "1" DeviceRecord : Uses
+    UserInterface --> "1" SQLiteDB : Uses
