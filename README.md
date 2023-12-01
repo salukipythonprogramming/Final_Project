@@ -31,7 +31,7 @@ The **unique id** for the record is **id** the datatype is **integer**, we also 
 3. Mac = TEXT NOT NULL
 4. Tag_Num = INTEGER NOT NULL
 5. Make = TEXT NOT NULL
-6. Model = TEXT
+6. Model = TEXT NOT NULL
 7. Factory_Reset = TEXT
 
 
