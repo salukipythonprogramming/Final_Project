@@ -7,13 +7,13 @@ cursor = conn.cursor()
 # Create the device table if not exists
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS devices (
-        ID INTEGER PRIMARY KEY,
-        Serial TEXT,
-        Mac TEXT,
-        Tag_Num INTEGER,
-        Make TEXT,
-        Model TEXT,
-        Factory_Reset BOOLEAN
+        ID INTEGER PRIMARY KEY AUTOINCREMENT,
+        Serial TEXT NOT NULL,
+        Mac TEXT NOT NULL,
+        Tag_Num INTEGER NOT NULL,
+        Make TEXT NOT NULL,
+        Model TEXT NOT NULL,
+        Factory_Reset TEXT
     );
 ''')
 conn.commit()
