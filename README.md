@@ -74,15 +74,27 @@ You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For e
 
 ```mermaid
 sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+participant User
+participant Program
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+User->>Program: 1. Create a new device record
+Program->>User: Enter Serial, MAC, Tag_Num, Make, Model, Factory_Reset
+User->>Program: 2. Read or search a device record
+Program->>User: Select search criteria (ID, Serial, MAC, Tag_Num)
+User->>Program: Enter search value
+Program->>User: Display device record if found
+User->>Program: 3. Update a device record
+Program->>User: Enter ID of the device record to update
+User->>Program: Enter new Serial, MAC, Tag_Num, Make, Model, Factory_Reset
+Program->>User: Device record updated successfully
+User->>Program: 4. Delete a device record
+Program->>User: Select delete criteria (ID, Serial, MAC, Tag_Num)
+User->>Program: Enter delete value
+Program->>User: Display device record if found
+User->>Program: Confirm deletion
+Program->>User: Device record ID deleted successfully!
+User->>Program: 5. Exit
+Program->>User: Exit program
 
 And this will produce a flow chart:
 
