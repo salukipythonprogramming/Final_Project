@@ -39,16 +39,16 @@ The **unique id** for the record is **id** the datatype is **integer**, we also 
 
 This area is for communication between Tyson and Blake.  We will keep a **team member**, a **date**, a **time**, and a **comment** for each log entry.  To uptain formatting standards, we will also show our **newest** log entries at the **top**, and **oldest** entries at the **bottom**.
 
-**Team Member:** Blake <br />
-**Date:** 11/27/23 <br />
-**Time:**  11:42 am <br />
-**Comment:** Created the readme.md file <br />
-<br />
-
 **Team Member:** Tyson <br />
 **Date:** 11/28/23 <br />
 **Time:**  11:13 pm <br />
 **Comment:** Created the CLI python Code version 1.0. txt file <br />
+<br />
+
+**Team Member:** Blake <br />
+**Date:** 11/27/23 <br />
+**Time:**  11:42 am <br />
+**Comment:** Created the readme.md file <br />
 <br />
 
 
