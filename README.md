@@ -22,17 +22,17 @@ Upon running the python program to launch the tkinter gui, the user will have op
 
 The database backend for this project will be SQLite.  When the admin user creates a record, the record will be stored, processed, and edited using the SQLite database. 
 
-## Fields for the records
+## SQLite Fields, data types, and contraints for the records
 
-The **unique id** for the record is **id** the datatype is **integer**, we also include the following records and corresponding **datatypes**:
+The **unique id** for the record is **id** the datatype is **integer**, we also include the following records and corresponding SQLite **datatypes**:
 
-1. ID = integer (primary key) (unique id)
-2. Serial = string
-3. Mac = string
-4. Tag_Num = integer
-5. Make = string
-6. Model = string
-7. Factory_Reset = Boolean 
+1. ID = INTEGER PRIMARY KEY AUTOINCREMENT
+2. Serial = TEXT NOT NULL
+3. Mac = TEXT NOT NULL
+4. Tag_Num = INTEGER NOT NULL
+5. Make = TEXT NOT NULL
+6. Model = TEXT
+7. Factory_Reset = TEXT
 
 
 # Communication
