@@ -12,11 +12,7 @@ The Device Management System is written in python programming language.  The pyt
 
 ## CLI (command line interface)
 
-Upon running the python program through the command line interface, the admin user will be presented with a main menu.   The main menu will give the admin user options to create a device record, read or search a device record, update a device record, and delete a record.
-
-## GUI (tkinter)
-
-Upon running the python program to launch the tkinter gui, the user will have options to view device records in a read only mode.
+Upon running the python program through the command line interface, the admin user will be presented with a main menu.   The main menu will give the admin user options to create a device record, read or search a device record, update a device record, and delete a record.  The user may also be presented a sub menu with additional options for data operations.
 
 ## Database backend (SQLite)
 
