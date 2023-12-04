@@ -38,6 +38,12 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 <br />
 
 **Team Member:** Blake <br />
+**Date:** 12/04/23 <br />
+**Time:**  03:46 pm <br />
+**Comment:** Updated the CLI python Code version 2.0 Python file, created submenues, improved formatting output, updated code, and tested program<br />
+<br />
+
+**Team Member:** Blake <br />
 **Date:** 12/01/23 <br />
 **Time:**  11:01 am <br />
 **Comment:** Updated the CLI python Code version 1.0 txt file, also updated the README.MD file with a table example, and compatible data types for SQLite <br />
