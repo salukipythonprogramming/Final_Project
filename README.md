@@ -52,7 +52,7 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 **Team Member:** Tyson <br />
 **Date:** 11/28/23 <br />
 **Time:**  11:13 pm <br />
-**Comment:** Created the CLI python Code version 1.0. txt file <br />
+**Comment:** Created the CLI python Code version 1.0. txt file, Created main Python Code Base, creates an sql database, created all CRUD (create, read, update, delete) functions, and if else statements for error trapping / handling <br />
 <br />
 
 **Team Member:** Blake <br />
