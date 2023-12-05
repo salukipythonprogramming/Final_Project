@@ -37,6 +37,12 @@ This area is for communication between Tyson and Blake.  We will keep a **team m
 <br />
 <br />
 
+**Team Member:** Tyson<br />
+**Date:** 12/05/23 <br />
+**Time:**  12:52 pm <br />
+**Comment:** Created and uploaded version 3.0.<br />
+<br />
+
 **Team Member:** Blake <br />
 **Date:** 12/04/23 <br />
 **Time:**  03:46 pm <br />
