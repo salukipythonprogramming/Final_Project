@@ -1,0 +1,18 @@
++-------------------+
+|  DeviceDatabase  |
++-------------------+
+| - conn: sqlite3.Connection |
+| - cursor: sqlite3.Cursor |
++-------------------+
+| + __init__(db_file='device_records.db'): void |
+| + create_table(): void |
+| + create_device_record(): void |
+| + read_device_record(search_choice=None, search_value=None): void |
+| + update_device_record(): void |
+| + delete_device_record(delete_choice=None, delete_value=None): void |
+| + view_all_records(): void |
+| + delete_all_records(): void |
+| + display_device_record(record): void |
+| + get_user_input(update=False): dict |
+| + close_connection(): void |
++-------------------+
